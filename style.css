@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*  {
+	box-sizing:border-box;
+  } 
+  @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+.wrap
+{
+	margin: 0 auto;
+	max-width: 1000px;
+	font-family: 'Noto Sans TC',sans-serif;
+}
+a{
+	text-decoration: none;
+	font-size:15px;
+}
+.banner{
+	height: 418px;
+	background-image: url(images/banner.png);
+	background-repeat: no-repeat;
+	background-position:0 70px ;
+}
+
+.fanlink{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #f6f6f6;
+	padding: 6px;
+}
+.fanlink a{
+	display: flex;
+	align-items: center;
+	padding:0 5px;
+	color: #4460a0;
+}
+.fanlink li:last-child>a{
+	border-left: 1px solid #cccccc;
+	color: #00aaec;
+}
+.navbar{	
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar h1 a{
+	display:block;
+	background-image: url(images/logo.png);
+	width: 190px;
+	height: 50px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.navbar ul{
+	display:flex;
+	align-items: center;
+}
+.navbar ul li a{
+	color: #00cc99;
+	padding: 15px 20px;
+}
+.navbar li a:hover{
+	border-bottom:3px solid #00cc99;
+}
+.banner-rect h2{
+	padding: 32px 22px;
+	font-size: 37px;
+	color: #fff;
+	line-height: 48px;
+}
+.banner-rect{
+	background-color:rgba(0,0,0,0.2);
+	margin-top: 90px;
+}
+.intro ul{
+	margin-top: 65px;
+	display:flex;
+	justify-content:space-around;
+}
+
+.intro li{
+	width: 300px;
+	text-align: center;
+	padding: 20px;
+	
+	border-radius: 3px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.intro h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.intro p{
+	font-size: 15px;
+	line-height: 22px;
+	text-align: left;
+}
+
+.intro img{
+	width: 150px;
+    height: 150px;
+    object-fit: contain;
+	margin-bottom: 5px;
+}
+.list{
+ width: 840px;
+ margin:62px auto;
+}
+.list h3{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 29px;
+	text-align: center;
+}
+.list table{
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+}
+.list th,.list td{
+	line-height: 36px;
+	padding-left: 22px;
+	border-top:1px solid #dddddd ;
+	border-bottom:1px solid #dddddd;
+}
+.list th{
+	font-weight: bold;
+	background: #f7f7f7;
+}
+.list tr:hover{
+	background: #9ed9e0;
+}
+.focus{
+	color: #42b392;
+}
+.formbox{
+	background: linear-gradient(#00644b,#009771);
+}
+.formbox h3{
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	line-height: 36px;
+	padding-top: 36px;
+	padding-bottom: 28px;
+}
+form{
+	display:flex;
+	justify-content: space-around;
+}
+
+textarea{
+	width: 461px;
+	height: 245px;
+}
+.inputbox{
+	width: 461px;
+	
+	display:flex;
+	flex-direction: column;
+}
+label{
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.5;
+}
+input{
+	font-size: 14px;
+	padding: 8px;
+	margin-bottom: 12px;
+}
+input:last-child{
+	
+	color: #fff;
+	width: 70px;
+	height: 32px;
+	background-color: #00cc99;
+	border-radius: 3px;
+	border: none;
+	align-self:flex-end;
+}
+.footer{
+	display:flex;
+	justify-content: space-between;
+	padding: 22px;
+	
+}
+.footer li{
+	font-size: 15px;
+	line-height: 24px;
+}
+.footer a{
+	color: #e12d80;
+}
